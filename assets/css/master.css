@@ -1,0 +1,259 @@
+.text.white {color: #FFFFFF;}
+.text.grey {color: #CCCCCC;}
+.text.black {color: #1B1C1D;}
+.text.yellow {color: #F2C61F;}
+.text.teal {color: #00B5AD;}
+.text.red {color: #D95C5C;}
+.text.purple {color: #564F8A;}
+.text.pink {color: #D9499A;}
+.text.orange {color: #E07B53;}
+.text.green {color: #5BBD72;}
+.text.blue {color: #3B83C0;}
+
+#orange-text {color: #E07B53;}
+
+/*.slick-slide img {
+  width: 100%;
+  height: auto;
+}*/
+
+#navbar {
+  padding-top: 0.34rem;
+  padding-bottom: 0.34rem;
+}
+
+#search-bar {
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+#menu-sidebar {
+  color: white;
+  background-color: #f2711c;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#bell-icon {
+  padding: 0;
+  margin-right: 0.3em;
+  font-size: x-large;
+}
+
+#notification-label {
+  top: 0;
+  left: 85%;
+}
+
+#bars-icon {
+  padding: 0;
+  padding-left: 0.5em;
+  font-size: x-large;
+}
+
+.line-through {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.muted {
+  color: #999;
+}
+
+#bottom-menu-divider {
+  margin-top: 8rem;
+}
+
+#kategori-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#kategori-p {
+  font-size: smaller;
+  color: #999!important;
+}
+
+#hot-product-section {
+  background-color: #f2711c;
+  margin-bottom: 2rem;
+}
+
+#card-wrapper {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+#hot-product-title {
+  margin-top: 0;
+  color: white;
+}
+
+#hot-product-content {
+  margin-bottom: 1rem;
+}
+
+#hot-product-image {
+  max-height: 10rem;
+  min-height: 10rem;
+}
+
+#title-product {
+  font-size: 1rem;
+}
+
+#harga-product {
+  margin-top: 0.6rem;
+}
+
+.slick-cloned {
+  display: none;
+  visibility: none;
+}
+
+#discount-section {
+  margin-bottom: 6rem;
+}
+
+#discount-product-image {
+  max-height: 10rem;
+  min-height: 10rem;
+}
+
+#beli-button {
+  height: 100% !important;
+}
+
+#estimasi-ongkir {
+  margin: 1rem;
+}
+
+#informasi-stok-wrapper {
+  margin: 1rem;
+}
+
+#informasi-stok {
+  margin: 0.5rem;
+}
+
+#desc-spek-product {
+  margin: 1rem;
+}
+
+#padding-row {
+  padding: 8px;
+}
+
+#ulasan-rating {
+  display: block;
+}
+
+#padding-right-star {
+  padding-right: 1.5rem;
+}
+
+#padding-left {
+  padding-left: 1.5rem;
+}
+
+td {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#width-100 {
+  width: 100%;
+}
+
+#title-kualitas {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+#ulasan-section {
+  margin: 1rem;
+}
+
+#rating-column {
+  padding-top: 0;
+}
+
+#margin-bottom {
+  margin-bottom: 1rem;
+}
+
+#card-comment {
+  margin-bottom: 2rem;
+}
+
+#comment-section {
+  margin: 1rem;
+}
+
+#admin-comment-section {
+  margin-left: 2rem;
+}
+
+#extra-content-admin {
+  background-color: #f5f5fe;
+}
+
+#rating-comment {
+  margin-bottom: 1rem;
+}
+
+#pertanyaan-section {
+  margin: 1rem;
+}
+
+#title-pertanyaan {
+  padding-bottom: 0;
+}
+
+#kolom-pertanyaan-section {
+  margin: 1rem;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+#shopping-bag-section {
+  margin-top: 5rem !important;
+  margin: 0;
+  padding: 0 !important;
+}
+
+#title-barang-dalam-keranjang {
+  margin-top: 1.5rem;
+}
+
+.ui.form.qty input[type=text] {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid lightgreen;
+  text-align: center;
+  width: 3.5rem;
+}
+
+#gambar-barang {
+  min-height: 8rem;
+  max-height: 8rem;
+  width: auto;
+}
+
+#gambar-barang-column {
+  padding: 0 !important;
+}
+
+#bigger-text {
+  font-size: medium;
+}
+
+#top-margin-checkout {
+  margin-top: 6rem !important;
+}
+
+#top-margin-searching {
+  margin-top: 6rem !important;
+}

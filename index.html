@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Web Development Store | WarungKumpul</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2711c">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="stylesheet" href="assets/css/master.css">
+  </head>
+  <body>
+
+    <!-- Sidebar menu -->
+    <div class="ui sidebar vertical menu">
+      <div class="item" id="menu-sidebar">
+        <div class="ui grid">
+          <div class="eight wide column">
+            MENU
+          </div>
+          <div class="right aligned eight wide column">
+            <div class="launch list"><b>x</b></div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="active item">
+        Beranda
+      </a>
+      <a href="#" class="item">
+        Login
+      </a>
+      <a href="#" class="item">
+        Daftar
+      </a>
+      <a href="#" class="item">
+        Kategori
+      </a>
+    </div>
+
+    <div class="pusher">
+      <!-- Top Menu -->
+      <div class="ui top fixed inverted orange borderless menu" id="navbar">
+        <!-- Bar icon -->
+        <div class="item launch list" id="bars-icon">
+          <i class="bars icon"></i>
+        </div>
+
+        <!-- Search bar -->
+        <div class="left menu" style="width:100%">
+          <div class="item" id="search-bar" style="width:100%">
+            <div class="ui icon input">
+              <input class="prompt" type="text" placeholder="Cari Barang...">
+              <i class="search icon"></i>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="item" id="bell-icon">
+          <i class="shopping cart icon"></i>
+          <div class="ui red floating circular label" id="notification-label">2</div>
+        </a>
+      </div>
+
+      <!-- Slider -->
+      <br><br><br>
+      <div class="content-slider">
+        <div>
+          <img src="assets/images/slider/1.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/slider/2.jpg" alt="">
+        </div>
+        <div>
+          <img src="assets/images/slider/3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="ui container" id="kategori-section">
+
+        <!-- Kategori -->
+        <div class="ui center aligned equal width grid">
+          <div class="row">
+            <div class="column">
+              <a href="#">
+                <img class="ui centered mini image" src="assets/images/category-icon/icon_hp.png" alt="">
+                <p id="kategori-p">Handphone & Tablet</p>
+              </a>
+            </div>
+            <div class="column">
+              <a href="#">
+                <img class="ui centered mini image" src="assets/images/category-icon/icon_laptop.png" alt="">
+                <p id="kategori-p">Laptop & Aksesoris</p>
+              </a>
+            </div>
+            <div class="column">
+              <a href="#">
+                <img class="ui centered mini image" src="assets/images/category-icon/icon_computer.png" alt="">
+                <p id="kategori-p">Komputer & Aksesoris</p>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <a href="#">
+                <img class="ui centered mini image" src="assets/images/category-icon/icon_cd.png" alt="">
+                <p id="kategori-p">Software</p>
+              </a>
+            </div>
+            <div class="column">
+              <a href="#">
+                <img class="ui centered mini image" src="assets/images/category-icon/icon_elektronik.png" alt="">
+                <p id="kategori-p">Elektronik</p>
+              </a>
+            </div>
+            <div class="column">
+              <a href="#">
+                <img class="ui centered mini image" src="assets/images/category-icon/icon_computer.png" alt="">
+                <p id="kategori-p">Komputer & Aksesoris</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="hot-product-section" class="ui basic segment">
+        <h4 id="hot-product-title" class="ui horizontal divider">HOT PRODUCT</h4>
+        <div id="hot-product-content" class="autoplay-hot-product">
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/1.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/2.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/3.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/4.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/1.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/2.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/3.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-wrapper" class="ui link card">
+            <div class="ui card">
+              <div class="image">
+                <img id="hot-product-image" src="assets/images/hot-product/4.png">
+              </div>
+              <div class="content">
+                <div id="title-product" class="header">Keyboard Silent</div>
+                <h5 id="harga-product" class="orange text">Rp 123.999</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- DISKON HARI INI -->
+      <div class="ui horizontal divider">
+        <h4>DISKON HARI INI</h4>
+      </div>
+      <!-- <div class="ui orange segment"> -->
+        <div id="discount-section" class="ui two column grid container fluid">
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <div class="ui red ribbon label">10% OFF</div>
+                <img id="discount-product-image" src="assets/images/hot-product/1.png" alt="">
+              </div>
+              <div class="content">
+                <a class="header" href="#">
+                  <h4>Keyboard Rusak V.02</h4>
+                </a>
+                <p class="orange text">
+                  <del class="meta">Rp 100.000</del>
+                  <br>
+                  <b id="bigger-text" class="text red">Rp 200.999</b>
+                </p>
+              </div>
+              <div class="extra content">
+                <p><span class="red text"><b>10</b></span> / <span class="red text"><b>100</b></span> Produk Tersisa</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <div class="ui red ribbon label">20% OFF</div>
+                <img id="discount-product-image" src="assets/images/hot-product/2.png" alt="">
+              </div>
+              <div class="content">
+                <a class="header" href="#">
+                  <h4>Keyboard Rusak V.02</h4>
+                </a>
+                <p class="orange text">
+                  <del class="meta">Rp 100.000</del>
+                  <br>
+                  <b id="bigger-text" class="text red">Rp 200.999</b>
+                </p>
+              </div>
+              <div class="extra content">
+                <p><span class="red text"><b>10</b></span> / <span class="red text"><b>100</b></span> Produk Tersisa</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <div class="ui red ribbon label">30% OFF</div>
+                <img id="discount-product-image" src="assets/images/hot-product/3.png" alt="">
+              </div>
+              <div class="content">
+                <a class="header" href="#">
+                  <h4>Keyboard Rusak V.02</h4>
+                </a>
+                <p class="orange text">
+                  <del class="meta">Rp 100.000</del>
+                  <br>
+                  <b id="bigger-text" class="text red">Rp 200.999</b>
+                </p>
+              </div>
+              <div class="extra content">
+                <p><span class="red text"><b>10</b></span> / <span class="red text"><b>100</b></span> Produk Tersisa</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <div class="ui red ribbon label">40% OFF</div>
+                <img id="discount-product-image" src="assets/images/hot-product/4.png" alt="">
+              </div>
+              <div class="content">
+                <a class="header" href="#">
+                  <h4>Keyboard Rusak V.02</h4>
+                </a>
+                <p class="orange text">
+                  <del class="meta">Rp 100.000</del>
+                  <br>
+                  <b id="bigger-text" class="text red">Rp 200.999</b>
+                </p>
+              </div>
+              <div class="extra content">
+                <p><span class="red text"><b>10</b></span> / <span class="red text"><b>100</b></span> Produk Tersisa</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <div class="ui red ribbon label">50% OFF</div>
+                <img id="discount-product-image" src="assets/images/hot-product/3.png" alt="">
+              </div>
+              <div class="content">
+                <a class="header" href="#">
+                  <h4>Keyboard Rusak V.02</h4>
+                </a>
+                <p class="orange text">
+                  <del class="meta">Rp 100.000</del>
+                  <br>
+                  <b id="bigger-text" class="text red">Rp 200.999</b>
+                </p>
+              </div>
+              <div class="extra content">
+                <p><span class="red text"><b>10</b></span> / <span class="red text"><b>100</b></span> Produk Tersisa</p>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui card">
+              <div class="image">
+                <div class="ui red ribbon label">60% OFF</div>
+                <img id="discount-product-image" src="assets/images/hot-product/2.png" alt="">
+              </div>
+              <div class="content">
+                <a class="header" href="#">
+                  <h4>Keyboard Rusak V.02</h4>
+                </a>
+                <p class="orange text">
+                  <del class="meta">Rp 100.000</del>
+                  <br>
+                  <b id="bigger-text" class="text red">Rp 200.999</b>
+                </p>
+              </div>
+              <div class="extra content">
+                <p><span class="red text"><b>10</b></span> / <span class="red text"><b>100</b></span> Produk Tersisa</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Bottom menu -->
+      <div class="ui fluid four item compact labeled icon bottom fixed borderless menu">
+        <a class="active item" href="#">
+          <i class="home icon orange text"></i>
+          Home
+        </a>
+        <a class="item" href="#">
+          <i class="shopping cart icon orange text"></i>
+          Keranjang
+        </a>
+        <a class="item" href="#">
+          <i class="user plus icon orange text"></i>
+          Daftar
+        </a>
+        <a class="item" href="#">
+          <i class="sign-in icon orange text"></i>
+          Login
+        </a>
+      </div>
+
+    </div>
+
+  </body>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+
+    $('.ui.sidebar')
+      .sidebar('setting', 'transition', 'slide along')
+      .sidebar('attach events', '.launch.list')
+    ;
+
+    $(document).ready(function(){
+      $('.content-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 700,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+
+    $('.autoplay-hot-product').slick({
+      draggable: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: false,
+      slidesToShow: 2.1,
+      slidesToScroll: 1,
+      touchThreshold: 1000,
+      arrows: false,
+    });
+
+  </script>
+</html>
